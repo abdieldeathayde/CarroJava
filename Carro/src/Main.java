@@ -19,6 +19,6 @@ public class Main {
          //carro.add("Camaro");
          //carro.add(461);
          //carro
-         System.out.println(carros);
+         System.out.println("Ano: " + carro.getAno() + " modelo: " + carro.getModelo() + " potencia: " + carro.getPotencia() + " motor: " + carro.getMotor() + " cor: " + carro.getCor());
      }
 }
