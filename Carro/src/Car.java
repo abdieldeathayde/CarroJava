@@ -5,14 +5,15 @@ class Car{
     int potencia;
     String motor;
     String cor;
-
+    int opcao;
     
-    public Car (int ano, String modelo, int potencia, String motor, String cor){
+    public Car (int ano, String modelo, int potencia, String motor, String cor, int opcao){
         this.ano = ano;
         this.modelo = modelo;
         this.potencia = potencia;
         this.motor = motor;
         this.cor = cor;
+        this.opcao = opcao;
     }
     public int getAno(){
         return ano;
@@ -45,7 +46,13 @@ class Car{
     public void setCor(String cor){
         this.cor = cor;
     }
-    //public String toString(){
-        //return anoStr;
-    //}
+    public int getOpcao(int opcao) {
+    	return opcao;
+    }
+    public void setOpcao(int opcao) {
+    	this.opcao = opcao;
+    }  
+    public String toString(){
+        return "Ano: " + ano + " Modelo: " + modelo + " Potencia: " + potencia + " Motor: " + motor + " Cor: " + cor + opcao + "\n";
+    }
  }
